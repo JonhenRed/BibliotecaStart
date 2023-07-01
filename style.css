@@ -1,6 +1,7 @@
-.logo {
-   display: flex;
+.cabecalho {
+    display: flex;
 }
+
 .imagem-logo {
-    width: 25px;
+    width: 30px;
 }
