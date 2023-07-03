@@ -1,40 +1,39 @@
+:root {
+    --cor-de-fundo: #fff;
+    --branco: #ffff;
+}
+body {
+    background-color: var(--cor-de-fundo);
+}
+h1 {
+    background-color: var(--branco);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
-
 .cabecalho {
     display: flex;
     background-color: rgb(255, 255, 255);
     padding: 5px;
-
 }
 .imagem-logo {
     width: 30px;
 }
-.items1 {
+.item {
     display: inline-block;
     margin: 20 16px;
     padding: 5px;
     text-align: center;
-
 }
-.items2 {
-    display: inline-block;
-    margin: 20 16px;
-    padding: 5px;
-    text-align: center;
-    justify-content: end;
 
-}
 .imagem-emprestimos {
     width: 20px;
-
 }
 .imagem-perfil {
     width: 23px;
 }
-
 
 body{
     font-family: 'Poppins', sans-serif;
