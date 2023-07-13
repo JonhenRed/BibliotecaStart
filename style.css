@@ -1,40 +1,57 @@
-:root {
-    --cor-de-fundo: #fff;
-    --branco: #ffff;
-}
-body {
-    background-color: var(--cor-de-fundo);
-}
-h1 {
-    background-color: var(--branco);
-}
-
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 .cabecalho {
     display: flex;
     background-color: rgb(255, 255, 255);
     padding: 5px;
+    padding-left: 35px;
 }
-.imagem-logo {
-    width: 30px;
-}
-.item {
+.texto-logo{
     display: inline-block;
     margin: 20 16px;
+    padding: 10px;
+    font-size: large;
+}
+.lista {
+    display: inline-block;
+    margin: 20 16px;
+    padding: 15px;
+    font-size: small;  
+}    
+.imagem-logo {
+    width: 30px;
+    position: absolute;
+    padding-left: 30px;
+    padding: 10px;
+}
+
+.anuncio{
+   text-align: center;
+   background-color: rgb(115, 36, 189);
+   padding: 30px;
+}
+.tx1 {
+    font-size: x-large;
+    color: white;
     padding: 5px;
-    text-align: center;
 }
-
-.imagem-emprestimos {
-    width: 20px;
+.tx2 {
+    color: white;
 }
-.imagem-perfil {
-    width: 23px;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
+.tx3{
+    padding: 10px;
+    font-size: small;
+    color: white;
+    background-color: rgb(115, 36, 189);
+    line-height: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    display: inline-block;
 }
