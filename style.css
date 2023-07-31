@@ -1,57 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Poppins", sans-serif;
-}
-.cabecalho {
+.cabecalho{
   display: flex;
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  padding-left: 35px;
+  justify-content: space-between;
+  background-color: var(--branco);
+  align-items: center;
+  position: relative;
 }
-.texto-logo {
+.cabecalho-menu{
   display: inline-block;
-  margin: 20 16px;
-  padding: 10px;
-  font-size: large;
+  background-image: url(../img/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
 }
-.lista {
-  display: inline-block;
-  margin: 20 16px;
-  padding: 15px;
-  font-size: small;
+.conteiner{
+  display: flex;
+  justify-content: space-between;
 }
-.imagem-logo {
-  width: 30px;
+.conteiner-imagem{
+  padding: 1em;
+}
+.lista-menu{
+  background-color: var(--branco);
+  display: none;
   position: absolute;
-  padding-left: 30px;
-  padding: 10px;
+  top: 100%;
+  width: 60vw;
 }
-
-.anuncio {
-  text-align: center;
-  background-color: rgb(115, 36, 189);
-  padding: 30px;
+.conteiner-botao{
+  display: none;
 }
-.tx1 {
-  font-size: x-large;
-  color: white;
-  padding: 5px;
+.conteiner-botao:checked~.lista-menu{
+  display: block;
 }
-.tx2 {
-  color: white;
+.lista-menu-titulo,.lista-menu-item{
+  font-weight: 700;
+  color: var(--amarelo);
+  padding: 1em;
 }
-.tx3 {
-  padding: 10px;
-  font-size: small;
-  color: white;
-  background-color: rgb(115, 36, 189);
-  line-height: 10px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 15px;
-  display: inline-block;
+.lista-menu-link{
+  color: var(--roxo);
 }
