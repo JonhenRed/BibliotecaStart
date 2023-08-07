@@ -1,3 +1,13 @@
+:root{
+  --cor-de-fundo: #f5e6f0;
+  --branco: #fdfdfd;
+  --fonte-principal:"Poppins";
+  --amarelo: #f7b80d;
+  --roxo: #C75EEB;
+  --fonte-principal: "Poppins";
+  --fonte-secundaria:"Josefin Sans";
+}
+
 .cabecalho{
   display: flex;
   justify-content: space-between;
@@ -5,6 +15,7 @@
   align-items: center;
   position: relative;
 }
+
 .cabecalho-menu{
   display: inline-block;
   background-image: url(../img/Menu.svg);
@@ -13,13 +24,17 @@
   width: 24px;
   height: 24px;
 }
-.conteiner{
+
+.container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.conteiner-imagem{
+
+.container-imagem{
   padding: 1em;
 }
+
 .lista-menu{
   background-color: var(--branco);
   display: none;
@@ -27,17 +42,40 @@
   top: 100%;
   width: 60vw;
 }
-.conteiner-botao{
+
+.container-botao{
   display: none;
 }
-.conteiner-botao:checked~.lista-menu{
+
+.container-botao:checked~.lista-menu{
   display: block;
 }
+
 .lista-menu-titulo,.lista-menu-item{
   font-weight: 700;
   color: var(--amarelo);
   padding: 1em;
 }
+
 .lista-menu-link{
   color: var(--roxo);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container__titulo{
+  display: none;
+}
+
+@media screen and (min-width:1024px){
+  .container__titulo{
+      display: block;
+      font-family: var(--fonte-secundaria);
+      font-size: 30px;
+      font-weight: 300;
+  }
+  .container__titulo--negrito{
+      font-weight: 400;
+  }
+
 }
